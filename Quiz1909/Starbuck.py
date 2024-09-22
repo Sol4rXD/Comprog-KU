@@ -97,6 +97,7 @@ def runStarBUGcafe_main():
                 coffee_men.append(cof)
 
         coffee_menu = [item.replace(' ','') for item in coffee_men[:]]
+        coffee_menu = [coffee for coffee in coffee_menu if coffee != '']
 
         for add in add_on_menu_CSV.splitlines():
             if add != '':
@@ -318,3 +319,5 @@ runStarBUGcafe_main()
 
 # CoffeeMenu02.txt
 # CoffeeMenuAddOn02.txt
+
+# CoffeeMenu04.txt
